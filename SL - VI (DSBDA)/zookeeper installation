@@ -1,0 +1,29 @@
+Download zookeeper-3.4.10.tar.gz
+
+sudo mv zookeeper-3.4.10 /usr/local/zookeeper/
+
+gedit ~/.bashrc
+Add-
+export ZOOKEEPER_HOME=/usr/local/zookeeper
+export PATH=$PATH:$ZOOKEEPER_HOME/bin
+
+echo $ZOOKEEPER_HOME
+/usr/local/zookeeper
+
+/zookeeper/config directory---- copy file zoo_sample.cfg --- and rename it as zoo.cfg
+edit zoo.cfg and change dataDir
+dataDir=/usr/local/hadoop/zoo_data
+
+Create zoo_data directory in above said location.
+create myid file in zoo_data directory and add 1 in it and save.
+
+edit zoo.cfg and add following line at the end
+server.1=localhost:2888:3888
+
+zkServer.sh start
+jps
+3493 QuorumPeerMain
+3515 Jps
+
+zkServer.sh stop
+3541 Jps
