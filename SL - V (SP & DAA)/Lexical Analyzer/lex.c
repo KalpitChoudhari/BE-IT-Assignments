@@ -29,25 +29,6 @@ struct UST
 	int srno;
 }UST;
 
-char *ltrim(char *s)
-{
-    while(isspace(*s)) s++;
-    return s;
-}
-
-char *rtrim(char *s)
-{
-    char* back = s + strlen(s);
-    while(isspace(*--back));
-    *(back+1) = '\0';
-    return s;
-}
-
-char *trim(char *s)
-{
-    return rtrim(ltrim(s)); 
-}
-
 void init(struct terminal TRN[])
 {
 	FILE *fp;
@@ -73,13 +54,6 @@ void alloc(struct IDN IDN[], struct LTR LTR[], struct UST UST[])
 		UST[i].class = (char *)malloc(sizeof(char));
 		UST[i].sym = (char *)malloc(sizeof(char));	
 	}
-}
-
-char * append(char * string1, char * string2)
-{
-    char * result = NULL;
-    asprintf(&result, "%s%s", string1, string2);
-    return result;
 }
 
 void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct UST UST[])
