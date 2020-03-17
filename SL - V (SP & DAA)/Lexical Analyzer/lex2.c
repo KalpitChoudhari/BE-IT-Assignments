@@ -5,6 +5,8 @@
 #include <ctype.h>
 #include <stdbool.h>
 
+int count = 0;
+
 char sym_list[] = { '#', '<', '>', '{', '}', '(', ')', '+', '-', '*', '/',  '\'', ',', ';', '&', '=', '[' , ']' }; //19 Elements
 
 struct IDN
@@ -100,11 +102,22 @@ int find_ltr(struct LTR LTR[], char* ch)
 
 void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct UST UST[])
 {
-	FILE *ip;
-	FILE *ip2;
-	ip	= fopen("input.c","r");
-	ip2	= ip;
+	FILE *ip, *op;
+	FILE *counter;
 	
+	ip = fopen("input.c","r");
+	op = fopen("output.txt", "w");
+	
+	counter = fopen("counter.txt","r");
+	fscanf(counter, "%d", &count);
+	fclose(counter);
+	
+	counter = fopen("counter.txt","w");
+	count = count + 1;
+	fprintf(counter, "%d", count);
+	
+	fprintf(op, "Number of times program run : %d\n", count);
+	fprintf(op, "----------------------------------\n");
 	char *c		= (char *)malloc(sizeof(char));
 	char *c1 	= (char *)malloc(sizeof(char));
 	char *string 	= (char *)malloc(sizeof(char));
@@ -112,7 +125,7 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 	char *numString = (char *)malloc(sizeof(char));
 	char *spec_sym 	= (char *)malloc(sizeof(char));
 	
-	int i = 0, identifier_index = 0, literal_index = 0;
+	int i = 0, look = 0, identifier_index = 0, literal_index = 0, search_sym = 0;
 	
 	*temp		= '\0';
 	*string 	= '\0';
@@ -120,8 +133,12 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 	*spec_sym	= '\0';
 	*c1 		= '\0';
 	*c		= '\0';
-	int look = 0;
-	printf("INDEX\tKEYOWORD\tCLASS\n");
+	
+	printf("INDEX\t  KEYOWORD\tCLASS\n");
+	printf("----------------------------------\n");
+	fprintf(op, "INDEX\t  KEYOWORD\tCLASS\n");
+	fprintf(op, "----------------------------------\n");
+	
 	*c = fgetc(ip);
 	while(*c != EOF)
 	{
@@ -130,14 +147,28 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 			if(*c == '+' || *c == '-' || *c == '=')
 			{
 				strcat(spec_sym, c);
-				//printf("%d\t%s%s\n", spec_sym);
+				search_sym = find_terminal(TRN, spec_sym);
+				if(search_sym != -1){
+					printf("%2d%14s%12s\n", search_sym+1, spec_sym, "LTR");
+					fprintf(op, "%2d%14s%12s\n", search_sym+1, spec_sym, "LTR");
+				}
+				else
+					printf("NOT FOUND\n");
 				*spec_sym = '\0';
 				*c = fgetc(ip);
 				look = 0;
 				continue;
 			}
 			else
-				//printf("SYM = %s\n", spec_sym);
+			{
+				search_sym = find_terminal(TRN, spec_sym);
+				if(search_sym != -1){
+					printf("%2d%14s%12s\n", search_sym+1, spec_sym, "LTR");
+					fprintf(op, "%2d%14s%12s\n", search_sym+1, spec_sym, "LTR");
+				}
+				else
+					printf("NOT FOUND\n");
+			}
 			look = 0;
 			*temp		= '\0';
 			*string 	= '\0';
@@ -167,19 +198,21 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 					look = 1;
 					strcat(spec_sym, c);
 				}
-				//break;
 			}
-			/*INSERT int in LITERAL table*/
+			/*INSERT "int" in LITERAL table*/
 			int search_ltr = find_ltr(LTR, numString);
 			if(search_ltr == -1)
 			{
 				strcpy(LTR[literal_index].name, numString);
 				LTR[literal_index].srno = literal_index;
-				printf("%2d%14s%12s\n", literal_index, numString, "LTR");
+				printf("%2d%14s%12s\n", literal_index+1, numString, "LTR");
+				fprintf(op, "%2d%14s%12s\n", literal_index+1, numString, "LTR");
 				literal_index++;
 			}
-			else
-				printf("%2d%14s%12s\n", search_ltr, numString, "LTR");
+			else{
+				printf("%2d%14s%12s\n", search_ltr+1, numString, "LTR");
+				fprintf(op, "%2d%14s%12s\n", search_ltr+1, numString, "LTR");
+			}
 			*numString = '\0';
 		}
 		if(!isalpha(*c) && *string != '\0' && !isdigit(*string) && *c != 46)
@@ -188,7 +221,8 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 			int index = find_terminal(TRN, string); 
 			if(index != -1)
 			{
-				printf("%2d%14s%12s\n", index, string, "TRN");	
+				printf("%2d%14s%12s\n", index+1, string, "TRN");	
+				fprintf(op, "%2d%14s%12s\n", index+1, string, "TRN");
 			}
 			/*IF NOT FOUND THEN IT MUST BE IDENTIFIER. So, INSERT it in identifier table*/
 			else
@@ -198,11 +232,13 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 				{
 					strcpy(IDN[identifier_index].name, string);
 					IDN[identifier_index].srno = identifier_index;
-					printf("%2d%14s%12s\n", identifier_index, string, "IDN");
+					printf("%2d%14s%12s\n", identifier_index+1, string, "IDN");
+					fprintf(op, "%2d%14s%12s\n", identifier_index+1, string, "IDN");
 					identifier_index++;					
 				}
 				else{
-					printf("%2d%14s%12s\n", search_idn, string, "IDN");
+					printf("%2d%14s%12s\n", search_idn+1, string, "IDN");
+					fprintf(op, "%2d%14s%12s\n", search_idn+1, string, "IDN");
 				}
 			}
 			*string = '\0';
@@ -223,6 +259,10 @@ void performOP(struct terminal TRN[], struct IDN IDN[], struct LTR LTR[], struct
 	
 		*c = fgetc(ip);
 	}
+	fprintf(op, "----------------------------------");
+	fclose(ip);
+	fclose(op);
+	fclose(counter);
 }
 
 int main()

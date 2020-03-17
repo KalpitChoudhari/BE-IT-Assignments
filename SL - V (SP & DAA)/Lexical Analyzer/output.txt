@@ -1,0 +1,78 @@
+Number of times program run : 5
+----------------------------------
+INDEX	  KEYOWORD	CLASS
+----------------------------------
+ 1             #         LTR
+ 2       include         TRN
+ 3             <         LTR
+ 4       stdio.h         TRN
+ 5             >         LTR
+ 1             #         LTR
+ 2       include         TRN
+ 3             <         LTR
+ 6       conio.h         TRN
+ 5             >         LTR
+ 7          void         TRN
+ 1          main         IDN
+ 8             (         LTR
+ 9             )         LTR
+10             {         LTR
+11           int         TRN
+ 2             i         IDN
+12             ,         LTR
+ 3             j         IDN
+13             =         LTR
+ 1             1         LTR
+12             ,         LTR
+ 4             k         IDN
+13             =         LTR
+ 2             2         LTR
+12             ,         LTR
+ 5          flag         IDN
+14             ;         LTR
+15           for         TRN
+ 8             (         LTR
+11           int         TRN
+ 2             i         IDN
+13             =         LTR
+ 3             0         LTR
+14             ;         LTR
+ 2             i         IDN
+16            <=         LTR
+ 4             4         LTR
+14             ;         LTR
+ 2             i         IDN
+17            ++         LTR
+ 9             )         LTR
+10             {         LTR
+ 4             k         IDN
+13             =         LTR
+ 2             i         IDN
+18             +         LTR
+ 3             j         IDN
+19             *         LTR
+ 4             k         IDN
+14             ;         LTR
+20             }         LTR
+ 5          flag         IDN
+13             =         LTR
+ 5            55         LTR
+14             ;         LTR
+21            if         TRN
+ 8             (         LTR
+ 5          flag         IDN
+22            ==         LTR
+ 6           102         LTR
+ 9             )         LTR
+23        printf         TRN
+ 8             (         LTR
+ 6         Hello         IDN
+ 7           all         IDN
+ 9             )         LTR
+14             ;         LTR
+25         getch         TRN
+ 8             (         LTR
+ 9             )         LTR
+14             ;         LTR
+20             }         LTR
+----------------------------------
