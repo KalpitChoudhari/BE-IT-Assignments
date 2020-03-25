@@ -1,1 +1,38 @@
+Part A : Assignments based on the Hadoop.
+        1. Study of Hadoop Installation.
+        2. Design a distributed application using MapReduce which processes a log file of a system.
+        3. Design and develop a distributed application to find the coolest/hottest year from the available weather data.
+        4. Write an application using HBase and HiveQL for flight information system.
 
+Part B : Assignments based on R and Python.
+        5. Perform the following operations using R/Python on the Amazon book review and facebook metrics data sets
+              5.1 Create data subsets
+              5.2 Merge Data
+              5.3 Sort Data
+              5.4 Transposing Data
+              5.5 Melting Data to long format
+              5.5 Casting data to wide format
+        6. Perform the following operations using R/Python on the Air quality and Heart Diseases data sets
+              6.1 Data cleaning
+              6.2 Data integration
+              6.3 Data transformation
+              6.4 Error correcting
+              6.5 Data model building
+        7. Integrate R/Python and Hadoop and perform the following operations on forest fire dataset
+              7.1 Text mining in RHadoop
+              7.2 Data analysis using the Map Reduce in Rhadoop
+              7.3 Data mining in Hive
+        8. Visualize the data using R/Python by plotting the graphs for assignment no. 6 and 7.
+        9. Perform the following data visualization operations using Tableau on Adult and Iris datasets
+              9.1 1D (Linear) Data visualization
+              9.2 2D (Planar) Data Visualization
+              9.3 3D (Volumetric) Data Visualization
+              9.4 Temporal Data Visualization
+              9.5 Multidimensional Data Visualization
+              9.6 Tree/ Hierarchical Data visualization
+              9.7 Network Data visualization.
+              
+Part C : Case Study Assignments
+        10. Social Media Analytics.
+        11. Text Mining/ Text Analytics.
+        12. Mobile Analytics.
