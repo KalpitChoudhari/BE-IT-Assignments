@@ -9,9 +9,9 @@ Given Grammer	:
 			Type 	-> int | float | char
 			var	-> id,var | id	
 INPUT		: 1. int a;
-		  2. int a1, s3;
+		  2. int a1,s3;
 		  3. float qw1,123;
-		  4. char vaar1, dsf;
+		  4. char vaar1,dsf;
 		  5. float i;
 		  
 		  
