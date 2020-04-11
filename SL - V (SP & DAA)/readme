@@ -1,15 +1,27 @@
 Assignment List:
 
 1.  Write recursive program to find solution of placing N queens on chess board.
+
 2.  Implementation of pass 1 of two pass assembler.
+
 3.  Implementation of pass 2 of two pass assembler.
+
 4.  WAP to find min-max using divide and conquer strategy.
+
 5.  WAP to find optimal storage on tapes using greedy method.
+
 6.  Study assignemnt of MACROS.
+
 7.  Implementation of Lexical Analyzer.
+
 8.  Implementation of BELLMAN FORD using DP.
+
 9.  WAP to implement RDP of given grammer.
+
 10. Implementation of TSP using DP (Dyanmic Programming).
+
 11. Implement Calculator using LEX and YACC.
+
 12. Intermediate code generation using LEX and YACC for control flow statement.
+
 13. Implementation of TSP using BB (Branch and Bound).
