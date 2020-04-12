@@ -1,0 +1,19 @@
+rootnova@janak:~/Desktop/SL - V/LEX icg$ lex while_ic.l
+rootnova@janak:~/Desktop/SL - V/LEX icg$ yacc -dy while_ic.y
+rootnova@janak:~/Desktop/SL - V/LEX icg$ gcc y.tab.c -ll -ly
+
+rootnova@janak:~/Desktop/SL - V/LEX icg$ 
+rootnova@janak:~/Desktop/SL - V/LEX icg$ ./a.out
+Enter the expression : while(a=b/c) a=a*b+e;
+L1: 
+t0 = b / c
+a = t0
+t1 = not a
+if t1 goto L2
+t2 = a * b
+t3 = t2 + e
+a = t3
+goto L1 
+L2: 
+rootnova@janak:~/Desktop/SL - V/LEX icg$ 
+
