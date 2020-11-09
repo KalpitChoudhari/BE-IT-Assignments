@@ -1,0 +1,336 @@
+> newdata <- mydata[order(mydata$Page.total.likes),]
+> View(newdata)
+> newdata <- mydata[order(mydata$Page.total.likes, -mydata$Category),]
+> View(newdata)
+> newdata <- mydata[order(-mydata$Category),]
+> View(newdata)
+> newdata <- mydata[order(mydata$Category),]
+> View(newdata)
+> t(newdata)
+                                                                    18        22        23        30        35        38       
+Page.total.likes                                                    "138414"  "138414"  "138414"  "138895"  "138895"  "138895" 
+Type                                                                "Photo"   "Photo"   "Link"    "Video"   "Photo"   "Photo"  
+                                                                    40        42        43        44        45        46       
+Page.total.likes                                                    "138895"  "138895"  "138353"  "138353"  "138353"  "138353" 
+Type                                                                "Photo"   "Link"    "Photo"   "Link"    "Photo"   "Link"   
+                                                                    47        48        49        50        52        53       
+Page.total.likes                                                    "138353"  "138353"  "138353"  "138353"  "138329"  "138329" 
+Type                                                                "Status"  "Link"    "Photo"   "Link"    "Photo"   "Photo"  
+                                                                    54        55        56        57        58        59       
+Page.total.likes                                                    "138329"  "138329"  "138329"  "138329"  "138329"  "138329" 
+Type                                                                "Photo"   "Photo"   "Video"   "Photo"   "Photo"   "Photo"  
+                                                                    60        61        62        63        64        65       
+Page.total.likes                                                    "138329"  "138185"  "138185"  "138185"  "138185"  "138185" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    66        67        68        69        70        71       
+Page.total.likes                                                    "138185"  "138185"  "138185"  "138185"  "137893"  "137893" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    72        74        75        76        77        78       
+Page.total.likes                                                    "137893"  "137893"  "137893"  "137893"  "137893"  "137177" 
+Type                                                                "Video"   "Photo"   "Video"   "Photo"   "Photo"   "Photo"  
+                                                                    80        83        86        87        89        90       
+Page.total.likes                                                    "137177"  "137177"  "137177"  "137177"  "137177"  "137059" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Link"    "Photo"   "Photo"  
+                                                                    91        97        100       101       104       105      
+Page.total.likes                                                    "137059"  "137059"  "137020"  "137020"  "137020"  "137020" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    106       111       112       115       116       117      
+Page.total.likes                                                    "137020"  "136736"  "136736"  "136642"  "136642"  "136642" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    118       119       120       121       123       124      
+Page.total.likes                                                    "136642"  "136642"  "136393"  "136393"  "136393"  "136393" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    125       126       128       129       130       131      
+Page.total.likes                                                    "136393"  "136393"  "136393"  "136393"  "136393"  "136393" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    132       133       134       135       136       137      
+Page.total.likes                                                    "136393"  "136393"  "136393"  "136393"  "136393"  "136393" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Link"   
+                                                                    138       140       141       145       146       150      
+Page.total.likes                                                    "136013"  "136013"  "136013"  "136013"  "136013"  "135713" 
+Type                                                                "Photo"   "Photo"   "Link"    "Photo"   "Photo"   "Link"   
+                                                                    151       154       165       167       169       172      
+Page.total.likes                                                    "135713"  "135713"  "135428"  "135428"  "135428"  "135195" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    174       178       182       184       186       195      
+Page.total.likes                                                    "135195"  "135195"  "134879"  "134879"  "134879"  "133594" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Video"   "Photo"   "Photo"  
+                                                                    197       199       202       206       207       216      
+Page.total.likes                                                    "133594"  "133451"  "132817"  "132201"  "132201"  "131956" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    219       225       228       234       239       242      
+Page.total.likes                                                    "131956"  "131808"  "131728"  "131630"  "131300"  "130791" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    244       246       251       252       257       258      
+Page.total.likes                                                    "130791"  "130791"  "129600"  "129600"  "129600"  "129600" 
+Type                                                                "Video"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    262       267       269       270       272       273      
+Page.total.likes                                                    "129600"  "128032"  "128032"  "128032"  "128032"  "127082" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    278       279       280       284       285       287      
+Page.total.likes                                                    "126424"  "126345"  "126345"  "126141"  "126141"  "126141" 
+Type                                                                "Video"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    288       289       290       291       293       295      
+Page.total.likes                                                    "126141"  "126141"  "125612"  "125612"  "125612"  "125612" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    296       300       303       305       311       315      
+Page.total.likes                                                    "125612"  "124940"  "124940"  "124940"  "124940"  "124940" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    321       340       345       353       356       361      
+Page.total.likes                                                    "123047"  "117764"  "117764"  "116435"  "116435"  "116091" 
+Type                                                                "Photo"   "Photo"   "Link"    "Status"  "Photo"   "Photo"  
+                                                                    365       369       371       373       374       375      
+Page.total.likes                                                    "115893"  "115368"  "113028"  "113028"  "113028"  "113028" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Link"    "Photo"   "Photo"  
+                                                                    379       381       383       385       387       388      
+Page.total.likes                                                    "111620"  "111620"  "109670"  "109670"  "109670"  "109670" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    389       390       393       396       398       402      
+Page.total.likes                                                    "109670"  "109670"  "109670"  "107907"  "107907"  "107907" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    403       404       409       413       414       415      
+Page.total.likes                                                    "107907"  "107907"  "106928"  "106928"  "104070"  "104070" 
+Type                                                                "Photo"   "Link"    "Link"    "Photo"   "Photo"   "Photo"  
+                                                                    416       417       418       419       420       421      
+Page.total.likes                                                    "104070"  "104070"  "104070"  "102112"  "102112"  "102112" 
+Type                                                                "Photo"   "Status"  "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    422       423       424       425       427       428      
+Page.total.likes                                                    "102112"  "102112"  "102112"  "102112"  "100732"  "100732" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    429       430       431       432       433       434      
+Page.total.likes                                                    "100732"  "100732"  "100732"  "100732"  "100732"  "100732" 
+Type                                                                "Photo"   "Photo"   "Link"    "Photo"   "Photo"   "Photo"  
+                                                                    435       436       437       438       440       441      
+Page.total.likes                                                    "100732"  "100732"  "100732"  "100732"  " 98195"  " 98195" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    442       446       447       448       449       450      
+Page.total.likes                                                    " 98195"  " 96749"  " 96749"  " 96749"  " 96749"  " 93684" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    451       452       453       457       458       462      
+Page.total.likes                                                    " 93577"  " 93470"  " 93363"  " 92935"  " 92828"  " 92400" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    465       469       471       473       475       477      
+Page.total.likes                                                    " 92079"  " 91651"  " 91437"  " 91223"  " 91009"  " 86909" 
+Type                                                                "Photo"   "Photo"   "Link"    "Photo"   "Photo"   "Photo"  
+                                                                    478       482       486       493       498       1        
+Page.total.likes                                                    " 86909"  " 86491"  " 86491"  " 85979"  " 81370"  "139441" 
+Type                                                                "Link"    "Link"    "Link"    "Link"    "Photo"   "Photo"  
+                                                                    2         4         5         6         9         11       
+Page.total.likes                                                    "139441"  "139441"  "139441"  "139441"  "139441"  "139441" 
+Type                                                                "Status"  "Photo"   "Photo"   "Status"  "Status"  "Status" 
+                                                                    12        13        14        15        16        21       
+Page.total.likes                                                    "139441"  "139441"  "139441"  "138414"  "138414"  "138414" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Status"  "Photo"  
+                                                                    25        26        27        29        31        32       
+Page.total.likes                                                    "138414"  "138458"  "138458"  "138895"  "138895"  "138895" 
+Type                                                                "Status"  "Status"  "Status"  "Photo"   "Photo"   "Photo"  
+                                                                    36        39        41        51        79        81       
+Page.total.likes                                                    "138895"  "138895"  "138895"  "138353"  "137177"  "137177" 
+Type                                                                "Photo"   "Status"  "Status"  "Photo"   "Photo"   "Status" 
+                                                                    92        95        98        99        102       108      
+Page.total.likes                                                    "137059"  "137059"  "137059"  "137020"  "137020"  "136736" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Status"  "Photo"   "Status" 
+                                                                    110       113       114       122       139       143      
+Page.total.likes                                                    "136736"  "136736"  "136642"  "136393"  "136013"  "136013" 
+Type                                                                "Status"  "Photo"   "Photo"   "Status"  "Status"  "Status" 
+                                                                    149       152       153       155       156       157      
+Page.total.likes                                                    "135713"  "135713"  "135713"  "135713"  "135700"  "135700" 
+Type                                                                "Status"  "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    159       160       162       164       166       170      
+Page.total.likes                                                    "135700"  "135617"  "135617"  "135617"  "135428"  "135428" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Status"  "Photo"   "Photo"  
+                                                                    173       175       176       179       180       181      
+Page.total.likes                                                    "135195"  "135195"  "135195"  "135195"  "135195"  "134879" 
+Type                                                                "Status"  "Photo"   "Status"  "Photo"   "Photo"   "Status" 
+                                                                    185       187       188       190       193       194      
+Page.total.likes                                                    "134879"  "134879"  "134879"  "133679"  "133679"  "133594" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    196       198       201       203       208       210      
+Page.total.likes                                                    "133594"  "133594"  "132817"  "132817"  "132201"  "132201" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Status"  "Photo"   "Photo"  
+                                                                    213       217       218       221       223       224      
+Page.total.likes                                                    "132201"  "131956"  "131956"  "131956"  "131808"  "131808" 
+Type                                                                "Photo"   "Photo"   "Status"  "Photo"   "Status"  "Status" 
+                                                                    226       229       230       233       235       236      
+Page.total.likes                                                    "131808"  "131728"  "131630"  "131630"  "131630"  "131300" 
+Type                                                                "Status"  "Photo"   "Photo"   "Status"  "Photo"   "Status" 
+                                                                    238       240       243       245       247       248      
+Page.total.likes                                                    "131300"  "130791"  "130791"  "130791"  "130791"  "129600" 
+Type                                                                "Photo"   "Photo"   "Status"  "Photo"   "Photo"   "Photo"  
+                                                                    250       254       256       259       261       263      
+Page.total.likes                                                    "129600"  "129600"  "129600"  "129600"  "129600"  "128032" 
+Type                                                                "Photo"   "Status"  "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    264       268       271       275       276       281      
+Page.total.likes                                                    "128032"  "128032"  "128032"  "126424"  "126424"  "126345" 
+Type                                                                "Photo"   "Status"  "Photo"   "Photo"   "Status"  "Photo"  
+                                                                    282       283       286       292       294       299      
+Page.total.likes                                                    "126345"  "126345"  "126141"  "125612"  "125612"  "125612" 
+Type                                                                "Photo"   "Status"  "Status"  "Photo"   "Photo"   "Photo"  
+                                                                    301       307       318       320       327       335      
+Page.total.likes                                                    "124940"  "124940"  "123047"  "123047"  "121540"  "119198" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Status" 
+                                                                    336       343       351       355       358       359      
+Page.total.likes                                                    "119198"  "117764"  "116435"  "116435"  "116091"  "116091" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    363       370       372       392       410       411      
+Page.total.likes                                                    "116091"  "113028"  "113028"  "109670"  "106928"  "106928" 
+Type                                                                "Status"  "Photo"   "Status"  "Photo"   "Photo"   "Photo"  
+                                                                    439       445       460       467       468       481      
+Page.total.likes                                                    " 98195"  " 96749"  " 92614"  " 91865"  " 91758"  " 86909" 
+Type                                                                "Link"    "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    484       497       500       3         7         8        
+Page.total.likes                                                    " 86491"  " 81370"  " 81370"  "139441"  "139441"  "139441" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    10        17        19        20        24        28       
+Page.total.likes                                                    "139441"  "138414"  "138414"  "138414"  "138414"  "138458" 
+Type                                                                "Photo"   "Photo"   "Status"  "Photo"   "Photo"   "Photo"  
+                                                                    33        34        37        73        82        84       
+Page.total.likes                                                    "138895"  "138895"  "138895"  "137893"  "137177"  "137177" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Status"  "Photo"   "Photo"  
+                                                                    85        88        93        94        96        103      
+Page.total.likes                                                    "137177"  "137177"  "137059"  "137059"  "137059"  "137020" 
+Type                                                                "Status"  "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    107       109       127       142       144       147      
+Page.total.likes                                                    "137020"  "136736"  "136393"  "136013"  "136013"  "136013" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Status"  "Photo"   "Photo"  
+                                                                    148       158       161       163       168       171      
+Page.total.likes                                                    "135713"  "135700"  "135617"  "135617"  "135428"  "135195" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    177       183       189       191       192       200      
+Page.total.likes                                                    "135195"  "134879"  "134879"  "133679"  "133679"  "132817" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    204       205       209       211       212       214      
+Page.total.likes                                                    "132817"  "132817"  "132201"  "132201"  "132201"  "132201" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    215       220       222       227       231       232      
+Page.total.likes                                                    "132201"  "131956"  "131956"  "131728"  "131630"  "131630" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    237       241       249       253       255       260      
+Page.total.likes                                                    "131300"  "130791"  "129600"  "129600"  "129600"  "129600" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    265       266       274       277       297       298      
+Page.total.likes                                                    "128032"  "128032"  "126424"  "126424"  "125612"  "125612" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    302       304       306       308       309       310      
+Page.total.likes                                                    "124940"  "124940"  "124940"  "124940"  "124940"  "124940" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    312       313       314       316       317       319      
+Page.total.likes                                                    "124940"  "124940"  "124940"  "124940"  "123047"  "123047" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    322       323       324       325       326       328      
+Page.total.likes                                                    "123047"  "123047"  "123047"  "123047"  "121540"  "120050" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    329       330       331       332       333       334      
+Page.total.likes                                                    "120050"  "120050"  "120050"  "119198"  "119198"  "119198" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    337       338       339       341       342       344      
+Page.total.likes                                                    "119198"  "119198"  "119198"  "117764"  "117764"  "117764" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    346       347       348       349       350       352      
+Page.total.likes                                                    "117764"  "117764"  "117764"  "117764"  "117764"  "116435" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    354       357       360       362       364       366      
+Page.total.likes                                                    "116435"  "116435"  "116091"  "116091"  "115893"  "115368" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    367       368       376       377       378       380      
+Page.total.likes                                                    "115368"  "115368"  "111620"  "111620"  "111620"  "111620" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    382       384       386       391       394       395      
+Page.total.likes                                                    "109670"  "109670"  "109670"  "109670"  "109670"  "107907" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    397       399       400       401       405       406      
+Page.total.likes                                                    "107907"  "107907"  "107907"  "107907"  "107907"  "107907" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    407       408       412       426       443       444      
+Page.total.likes                                                    "107907"  "106928"  "106928"  "102112"  " 98195"  " 96749" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Link"    "Photo"   "Photo"  
+                                                                    454       455       456       459       461       463      
+Page.total.likes                                                    " 93256"  " 93149"  " 93042"  " 92721"  " 92507"  " 92293" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    464       466       470       472       474       476      
+Page.total.likes                                                    " 92186"  " 91972"  " 91544"  " 91330"  " 91116"  " 86909" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    479       480       483       485       487       488      
+Page.total.likes                                                    " 86909"  " 86909"  " 86491"  " 86491"  " 85979"  " 85979" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    489       490       491       492       494       495      
+Page.total.likes                                                    " 85979"  " 85979"  " 85979"  " 85979"  " 85093"  " 85093" 
+Type                                                                "Photo"   "Photo"   "Photo"   "Photo"   "Photo"   "Photo"  
+                                                                    496       499      
+Page.total.likes                                                    " 85093"  " 81370" 
+Type                                                                "Photo"   "Photo"  
+ [ reached getOption("max.print") -- omitted 17 rows ]
+> newdata <- t(newdata)
+> View(newData)
+> View(newData)
+> View(newdata)
+> library(reshape)
+Error in library(reshape) : there is no package called ‘reshape’
+> install.packages("reshape")
+Installing package into ‘/home/rootnova/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+also installing the dependency ‘plyr’
+
+trying URL 'https://cloud.r-project.org/src/contrib/plyr_1.8.6.tar.gz'
+Content type 'application/x-gzip' length 401191 bytes (391 KB)
+==================================================
+downloaded 391 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/reshape_0.8.8.tar.gz'
+Content type 'application/x-gzip' length 42558 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+* installing *source* package ‘plyr’ ...
+** package ‘plyr’ successfully unpacked and MD5 sums checked
+** libs
+g++  -I/usr/share/R/include -DNDEBUG  -I"/home/rootnova/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/rootnova/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c loop_apply.c -o loop_apply.o
+g++  -I/usr/share/R/include -DNDEBUG  -I"/home/rootnova/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c split-numeric.cpp -o split-numeric.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o plyr.so RcppExports.o loop_apply.o split-numeric.o -L/usr/lib/R/lib -lR
+installing to /home/rootnova/R/x86_64-pc-linux-gnu-library/3.4/plyr/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (plyr)
+* installing *source* package ‘reshape’ ...
+** package ‘reshape’ successfully unpacked and MD5 sums checked
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (reshape)
+
+The downloaded source packages are in
+	‘/tmp/RtmpLWqNPm/downloaded_packages’
+> library(reshape)
+> library(reshape)
+> newdata <- t(newdata)
+> View(newdata)
+> md <- melt(newdata, id=c("Type", "Category", "Paid" ))
+> View(md)
+> md
+      X1                                                                  X2   value
+1     18                                                    Page.total.likes  138414
+2     22                                                    Page.total.likes  138414
+3     23                                                    Page.total.likes  138414
+4     30                                                    Page.total.likes  138895
+5     35                                                    Page.total.likes  138895
+6     38                                                    Page.total.likes  138895
+7     40                                                    Page.total.likes  138895
+8     42                                                    Page.total.likes  138895
+9     43                                                    Page.total.likes  138353
+10    44                                                    Page.total.likes  138353
+11    45                                                    Page.total.likes  138353
+12    46                                                    Page.total.likes  138353
