@@ -1,5 +1,5 @@
 # TE---SEM-II
-This repository contains all the assignments of TE - IT 2nd Sem
+This repository contains all the assignments of BE - IT
 
 Regards, 
 RooT NovA
