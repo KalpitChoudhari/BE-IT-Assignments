@@ -133,7 +133,7 @@ int main()
 
    //Checking whether input is prime or not
    flag = prime(x);
-   if(flag == 0)
+   if(!flag)
    {
       cout << "\nINVALID INPUT\n";
       exit(0);
